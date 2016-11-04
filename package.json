@@ -1,7 +1,7 @@
 {
-  "name": "pluralsight-redux-starter",
+  "name": "learning-react-redux",
   "version": "1.0.0",
-  "description": "Starter kit for React and Redux Pluralsight course by Cory House",
+  "description": "A example project from React and Redux Pluralsight course by Cory House and based on https://github.com/coryhouse/pluralsight-redux-starter",
   "scripts": {
     "prestart": "babel-node tools/startMessage.js",
     "start": "npm-run-all --parallel open:src lint:watch test:watch",
@@ -11,7 +11,7 @@
     "test": "mocha --reporter progress tools/testSetup.js \"src/**/*.test.js\"",
     "test:watch": "npm run test -- --watch"
   },
-  "author": "Cory House",
+  "author": "Willian F. Batista",
   "license": "MIT",
   "dependencies": {
     "babel-polyfill": "6.8.0",
@@ -67,6 +67,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/coryhouse/pluralsight-redux-starter"
+    "url": "https://github.com/wfuertes/learning-react-redux"
   }
 }
