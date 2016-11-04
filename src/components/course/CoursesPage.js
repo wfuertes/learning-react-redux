@@ -9,7 +9,7 @@ class CoursesPage extends React.Component {
         super(props, context);
 
         this.state = {
-            course: {title: ''}
+            course: { title: '' }
         };
 
         // this is performance
@@ -24,7 +24,7 @@ class CoursesPage extends React.Component {
     }
 
     onClickSave() {
-       this.props.actions.createCourse(this.state.course);
+        this.props.actions.createCourse(this.state.course);
     }
 
     courseRow(course, index) {
@@ -40,13 +40,13 @@ class CoursesPage extends React.Component {
                 <CourseList courses={courses} />
 
                 <h2>Add Course</h2>
-                <input 
-                    type="text" 
+                <input
+                    type="text"
                     onChange={this.onTitleChange}
                     value={this.state.course.title} />
 
-                <input 
-                    type="submit" 
+                <input
+                    type="submit"
                     onClick={this.onClickSave}
                     value="Value" />
             </div>
